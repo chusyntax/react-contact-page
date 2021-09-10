@@ -36,7 +36,7 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-form {
+.contactForm {
   background-color: #1abc9c;
   position: relative;
 }
@@ -61,7 +61,7 @@ textarea {
   right: 30px;
 }
 
-.contact-form:before {
+.contactForm:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -87,7 +87,7 @@ form {
   margin-bottom: 0.7rem;
 }
 
-.input-container {
+.inputContainer {
   position: relative;
   margin: 1rem 0;
 }
@@ -114,21 +114,7 @@ textarea.input {
   overflow-y: auto;
 }
 
-.input-container label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  padding: 0 0.4rem;
-  color: #fafafa;
-  font-size: 0.9rem;
-  font-weight: 400;
-  pointer-events: none;
-  z-index: 1000;
-  transition: 0.5s;
-}
-
-.input-container.textarea label {
+.inputContainer.textarea label {
   top: 1rem;
   transform: translateY(0);
 }
@@ -152,58 +138,14 @@ textarea.input {
   color: #fff;
 }
 
-.input-container span {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  transform: translateY(-50%);
-  font-size: 0.8rem;
-  padding: 0 0.4rem;
-  color: transparent;
-  pointer-events: none;
-  z-index: 500;
-}
 
-.input-container span:before,
-.input-container span:after {
-  content: "";
-  position: absolute;
-  width: 10%;
-  opacity: 0;
-  transition: 0.3s;
-  height: 5px;
-  background-color: #1abc9c;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-.input-container span:before {
-  left: 50%;
-}
-
-.input-container span:after {
-  right: 50%;
-}
-
-.input-container.focus label {
-  top: 0;
-  transform: translateY(-50%);
-  left: 25px;
-  font-size: 0.8rem;
-}
-
-.input-container.focus span:before,
-.input-container.focus span:after {
-  width: 50%;
-  opacity: 1;
-}
-
-.contact-info {
+.contactInfo {
   padding: 2.3rem 2.2rem;
   position: relative;
 }
 
-.contact-info .title {
+.contactInfo .title {
   color: #1abc9c;
 }
 
@@ -225,20 +167,20 @@ textarea.input {
   margin-right: 0.7rem;
 }
 
-.social-media {
+.socialMedia {
   padding: 2rem 0 0 0;
 }
 
-.social-media p {
+.socialMedia p {
   color: #333;
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   margin-top: 0.5rem;
 }
 
-.social-icons a {
+.socialIcons a {
   width: 35px;
   height: 35px;
   border-radius: 5px;
@@ -250,11 +192,11 @@ textarea.input {
   transition: 0.3s;
 }
 
-.social-icons a:hover {
+.socialIcons a:hover {
   transform: scale(1.05);
 }
 
-.contact-info:before {
+.contactInfo:before {
   content: "";
   position: absolute;
   width: 110px;
@@ -266,7 +208,7 @@ textarea.input {
   opacity: 0.3;
 }
 
-.big-circle {
+.bigCircle {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -277,7 +219,7 @@ textarea.input {
   transform: translate(-40%, 38%);
 }
 
-.big-circle:after {
+.bigCircle:after {
   content: "";
   position: absolute;
   width: 360px;
@@ -302,14 +244,14 @@ textarea.input {
     grid-template-columns: 1fr;
   }
 
-  .contact-info:before {
+  .contactInfo:before {
     bottom: initial;
     top: -75px;
     right: 65px;
     transform: scale(0.95);
   }
 
-  .contact-form:before {
+  .contactForm:before {
     top: -13px;
     left: initial;
     right: 70px;
@@ -320,7 +262,7 @@ textarea.input {
     height: 350px;
   }
 
-  .big-circle {
+  .bigCircle {
     bottom: 75%;
     transform: scale(0.9) translate(-40%, 30%);
     right: 50%;
@@ -330,7 +272,7 @@ textarea.input {
     margin: 1rem 0 1.5rem 0;
   }
 
-  .social-media {
+  .socialMedia {
     padding: 1.5rem 0 0 0;
   }
 }
@@ -340,23 +282,23 @@ textarea.input {
     padding: 1.5rem;
   }
 
-  .contact-info:before {
+  .contactInfo:before {
     display: none;
   }
 
   .square,
-  .big-circle {
+  .bigCircle {
     display: none;
   }
 
   form,
-  .contact-info {
+  .contactInfo {
     padding: 1.7rem 1.6rem;
   }
 
   .text,
   .information,
-  .social-media p {
+  .socialMedia p {
     font-size: 0.8rem;
   }
 
@@ -364,7 +306,7 @@ textarea.input {
     font-size: 1.15rem;
   }
 
-  .social-icons a {
+  .socialIcons a {
     width: 30px;
     height: 30px;
     line-height: 30px;
