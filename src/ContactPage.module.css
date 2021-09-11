@@ -11,6 +11,9 @@ input,
 textarea {
   font-family: "Poppins", sans-serif;
 }
+placeholder{
+  background:white;
+}
 
 .container {
   position: relative;

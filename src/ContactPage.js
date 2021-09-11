@@ -1,7 +1,12 @@
 import styles from "./ContactPage.module.css";
+import { useForm} from '@formspree/react';
 
 function ContactPage() {
 
+  const [state, handleSubmit] = useForm("xeqvvrkn");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
 
     return (
         <body>
@@ -54,7 +59,7 @@ function ContactPage() {
               <span className={`${styles.circle} ${styles.one}`}></span>
               <span className={`${styles.circle} ${styles.two}`}></span>
     
-              <form  action="https://formspree.io/f/xeqvvrkn"  method="POST" autocomplete="on">
+              <form  onSubmit={handleSubmit} autocomplete="on">
                 <h3 className={styles.title}>Contact us</h3>
                 <div className={styles.inputContainer}>
                   <input type="text" name="name" className={`${styles.input} ${styles.focus}`} placeholder="Name" />
@@ -69,10 +74,11 @@ function ContactPage() {
 
                 </div>
                 <div className={`${styles.inputContainer} ${styles.textarea}`}>
-                  <textarea name="message" placeholder="Message" className={styles.input}></textarea>
+                  <textarea id="message" name="message" placeholder="Message" className={styles.input}></textarea>
 
                 </div>
-                <input type="submit" value="Send" className={styles.btn} />
+
+                <button type="submit" disabled={state.submitting} className={styles.btn}>Send</button>
               </form>
             </div>
           </div>
